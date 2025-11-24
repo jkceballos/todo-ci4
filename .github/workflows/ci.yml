@@ -16,8 +16,8 @@ jobs:
 
     - name: Build and test
       run: |
-        docker build -t todo-ci .
-        docker run -v ${{ github.workspace }}:/app todo-ci
+        docker build -t todo-ci4 .
+        docker run -v ${{ github.workspace }}:/app todo-ci4
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
